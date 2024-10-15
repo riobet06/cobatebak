@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teks Berjalan dengan Glow</title>
+    <!-- Impor Font Lobster dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        marquee {
+            color: #ffffff; /* Warna teks putih */
+            font-size: 48px; /* Ukuran teks */
+            font-weight: bold;
+            font-family: 'Lobster', cursive; /* Font Lobster */
+            text-shadow: 0 0 2px #ffffff, /* Glow putih lebih lembut */
+                         0 0 4px #ffffff; /* Glow putih lebih halus */
+            letter-spacing: 1px; /* Mengurangi jarak antar karakter */
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" scrollamount="5"> <!-- Mengurangi scrollamount untuk pergerakan lebih halus -->
+        Ini Web Gua Cuyy
+    </marquee>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT-style Background</title>
+    <style>
+        body {
+            background-image: url('therumit.jpeg'); /* Latar belakang gambar */
+            background-size: cover; /* Agar gambar memenuhi layar */
+            background-position: center; /* Agar gambar berada di tengah */
+            color: white; /* Warna teks putih */
+            font-family: Arial, sans-serif; /* Font sederhana */
+        }
+
+        .chat-container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: rgba(44, 44, 44, 0.8); /* Warna latar belakang chat dengan transparansi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <p>Selamat datang di Web Gua!!.</p>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Tab Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E1E1E; /* Latar belakang gelap */
+            color: white; /* Warna teks putih */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center; /* Agar menu berada di tengah */
+            background-color: #333; /* Warna latar belakang menu */
+            padding: 10px 0;
+            border-radius: 10px; /* Sudut melengkung untuk navbar */
+            margin: 20px; /* Memberi jarak pada navbar dari tepi layar */
+        }
+
+        .navbar a {
+            color: white; /* Warna teks putih */
+            text-decoration: none; /* Hilangkan garis bawah */
+            padding: 25px 15px; /* Spasi dalam tautan */
+            margin: 0 10px; /* Jarak antar tab */
+            transition: background-color 0.3s;
+            border-radius: 5px; /* Sudut melengkung pada setiap tab */
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Warna saat hover */
+        }
+
+        .content {
+            display: none; /* Menyembunyikan konten secara default */
+            padding: 20px; /* Spasi dalam konten */
+            margin: 20px; /* Jarak antara konten dengan tepi layar */
+            background-color: #2C2C2C; /* Warna latar belakang konten */
+            border-radius: 10px; /* Sudut melengkung pada konten */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan agar konten terlihat melayang */
+        }
+
+        #home { display: block; } /* Menampilkan konten Home secara default */
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#" onclick="showContent('home')">Home</a>
+        <a href="#" onclick="showContent('chat')">Chat</a>
+        <a href="#" onclick="showContent('about')">About</a>
+        <a href="#" onclick="showContent('contact')">Contact</a>
+    </div>
+
+    <div id="home" class="content">        
+        <h2>Home</h2>
+        <p>Perkenalan: Nama gue, Rio Robrian Atthariq disini "WEB" gua sendiri. Yang akan menyimpan beberapa materi yang telah di sampaikan dan juga membuat satu per satu bagian web ini, so let's go.</p>
+        <img src="rioo.jpeg" width="295" height="375" alt="Gambar Rio">
+    </div>
+
+    <div id="chat" class="content">
+        <h2>Chat</h2>
+        <p>Ini adalah fitur chat. Lu boleh chat gua disini ni no nya : +62 882-1068-6533 :D.</p>
+    </div>
+    <div id="about" class="content">
+        <h2>About</h2>
+        <p>Halaman ini menjelaskan tentang kami dan apa yang kami lakukan. Kami berkomitmen untuk memberikan layanan terbaik.</p>
+    </div>
+
+    <div id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Anda dapat menghubungi kami melalui email atau telepon untuk pertanyaan lebih lanjut.</p>
+    </div>
+
+    <script>
+        function showContent(section) {
+            // Menyembunyikan semua konten
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Menampilkan konten yang dipilih
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #1E1E1E; /* Latar belakang gelap untuk halaman */
+            font-family: Arial, sans-serif; /* Font sederhana */
+            padding: 20px; /* Memberikan padding pada body */
+            max-width: 800px; /* Mengurangi lebar halaman */
+            margin: auto; /* Memusatkan halaman */
+            color: white; /* Warna teks di luar tabel tetap putih */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Memberikan jarak antara judul dan tabel */
+        }
+        th, td {
+            border: 1px solid white; /* Garis tepi putih */
+            padding: 10px;
+            text-align: left;
+            background-color: white; /* Semua baris memiliki latar belakang putih */
+            color: black; /* Mengubah warna teks dalam tabel menjadi hitam */
+        }
+        th {
+            background-color: grey; /* Warna latar belakang header */
+            color: white; /* Warna teks header tetap putih */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabel Nama</h2>
+
+<table>
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>NIS</th>
+        <th>Kota</th> <!-- Mengganti Nisn menjadi Kota -->
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rio</td>
+        <td>220754</td>
+        <td>Jakarta</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Faik</td>
+        <td>220755</td>
+        <td>Bandung</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Andi</td>
+        <td>220756</td>
+        <td>Surabaya</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Fadil</td>
+        <td>220757</td>
+        <td>Medan</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Bega</td>
+        <td>220758</td>
+        <td>Semarang</td>
+    </tr>
+</table>
+
+</body>
+</html>
